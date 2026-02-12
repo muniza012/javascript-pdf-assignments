@@ -796,13 +796,103 @@ document.write('</select>');
 ////////////////////// ------Chap 17-20 "ARRAYS AND LOOP"-------
 
 //////////  Ques # 1
-//////////  Ques # 2
-//////////  Ques # 3
-//////////  Ques # 4
-//////////  Ques # 5
-//////////  Ques # 6
-//////////  Ques # 7
-//////////  Ques # 8
-//////////  Ques # 9
-//////////  Ques # 10
 
+let multiArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+//////////  Ques # 2
+
+let newArray = [
+  [0, 1, 2, 3],
+  [1, 0, 1, 2],
+  [2, 1, 0, 1]
+];
+//////////  Ques # 3
+
+for(let i=1;i<=10;i++){
+console.log(`${i}`);
+
+}
+
+//////////  Ques # 4
+// let table = +prompt('enter a number to show its multiplication table');
+// let start=+prompt('from where to start multiplication table');
+// let end=+prompt(' where to end multiplication table');
+
+// for(let i=start;i<=end;i++){
+// console.log(`${table}x${i}=${table*i}`);
+
+// }
+//////////  Ques # 5
+
+// let fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+// for(let i=0;i<fruits.length;i++){
+// console.log(` Element at index ${i} is ${fruits[i]}`);
+
+// }
+//////////  Ques # 6
+for(let i=1;i<=15;i++){
+console.log(i);
+
+}
+
+for(let i=15;i>=1;i--){
+console.log(i);
+
+}
+
+for(let i=0;i<=20;i+=2){
+console.log(i);
+
+}
+for(let i=1;i<=19;i+=2){
+console.log(i);
+
+}
+for(let i=0;i<=20;i+=2){
+console.log(i +'k');
+
+}
+
+//////////  Ques # 7
+// let items = ["cake", "apple", "pie", "cookie", "chips", "patties"];
+// let user=prompt('Welcome to ABC bakery.Which item you want to order?').toLowerCase();
+// let isfound = false;
+// for(let i=0;i<items.length;i++){
+// if(user===items[i]){
+//   console.log(`${items[i]} is available`);
+//   isfound=true;
+//   break;
+// }
+// }
+// if (!isfound) {
+//   console.log(`We are sorry this item is not available`);
+// }
+
+//////////  Ques # 8
+// let nums=[24, 53, 78, 91, 12];
+// let largeNum=nums[0];
+// for(let i=0;i<nums.length;i++){
+// if(nums[i]>largeNum){
+// largeNum = nums[i];
+// }
+// }
+// console.log("The largest number is:", largeNum);
+
+//////////  Ques # 9
+let nums=[24, 53, 78, 91, 12];
+let smallNum=nums[0];
+for(let i=0;i<nums.length;i++){
+if(nums[i]<smallNum){
+smallNum = nums[i];
+}
+}
+console.log("The smallest number is:", smallNum);
+
+//////////  Ques # 10
+for(let i=1;i<=20;i++){
+console.log(`${5*i}`);
+
+}
