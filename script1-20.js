@@ -447,15 +447,15 @@ document.writeln(`<h4>Result:</h4>
 // if (totalPercentage >= 80) {
 //   grade = "A-one";
 //   remarks = "Excellent";
-// } 
+// }
 // else if (totalPercentage >= 70) {
 //   grade = "A";
 //   remarks = "Good";
-// } 
+// }
 // else if (totalPercentage >= 60) {
 //   grade = "B";
 //   remarks = "You need to improve";
-// } 
+// }
 // else {
 //   grade = "Fail";
 //   remarks = "Sorry";
@@ -466,20 +466,19 @@ document.writeln(`<h4>Result:</h4>
 //   <p>Percentage:${totalPercentage}%</p>
 //   <p>Grade:${grade}</p>
 //   <p>Remarks:${remarks}</p>
-  
-  // `)
 
+// `)
 
 //////////  Ques # 7
 // let secretNum=3;
 // let userGuess=+prompt('Guess the secret number');
- 
+
 // if(  userGuess===secretNum){
 //   console.log('Bingo! Correct answer');
-  
+
 // }else if(userGuess<=5){
 //   console.log('Close enough to the correct answer.');
-  
+
 // }else{
 // console.log('wrong answer');
 // }
@@ -491,7 +490,7 @@ document.writeln(`<h4>Result:</h4>
 
 // }else{
 //   console.log('not divisible');
-  
+
 // }
 
 //////////  Ques # 9
@@ -504,7 +503,6 @@ document.writeln(`<h4>Result:</h4>
 //   console.log("Odd number");
 // }
 
-
 //////////  Ques # 10
 
 // let temp=+prompt('enter temperature')
@@ -515,18 +513,18 @@ document.writeln(`<h4>Result:</h4>
 // }else{
 //    if (temp > 40) {
 // console.log('It is too hot outside.');
-// } 
+// }
 // else if (temp >30) {
 //  console.log('The Weather today is Normal.');
- 
-// } 
+
+// }
 // else if (temp >20) {
 // console.log('Today’s Weather is cool.');
 
-// } 
+// }
 // else if(temp>10){
 //   console.log('OMG! Today’s weather is so Cool.”');
-  
+
 // }
 // }
 
@@ -544,16 +542,138 @@ document.writeln(`<h4>Result:</h4>
 
 // } else if(operation==='*'){
 // console.log(firstNum*secNum);
-  
+
 // } else if(operation==='/'){
 // console.log(firstNum/secNum);
-  
-// } 
+
+// }
 // }else{
 //   console.log('invalid operator');
+
+// }
+
+////////////////////// ------Chap 12-13 "IF…ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS"-------
+
+//////////  Ques # 1
+
+// let input = prompt("Enter only one character:");
+// let ascii = input.charCodeAt(0);
+
+// if (input.length !== 1) {
+//   console.log("Please enter exactly one character.");
+// } else {
+//   if (ascii >= 48 && ascii <= 57) {
+//     console.log("It is a number.");
+//   } else if (ascii >= 65 && ascii <= 90) {
+//     console.log("It is an uppercase letter.");
+//   } else if (ascii >= 97 && ascii <= 122) {
+//     console.log("It is a lowercase letter.");
+//   } else {
+//     console.log("It is neither a number nor a letter.");
+//   }
+// }
+
+//////////  Ques # 2
+// let num1=+prompt('enter first integer');
+// let num2=+prompt('enter second integer');
+
+// if(isNaN(num1) || isNaN(num2)){
+// console.log('enter only number');
+
+// }else{
+//   if(num1>num2){
+// console.log(`${num1} is greater than ${num2}`);
+
+// }else if(num2>num1){
+// console.log(`${num2} is greater than ${num1}`);
+
+// }else if(num1===num2){
+// console.log('Both are equal');
+
+// }
+// }
+
+//////////  Ques # 3
+// let num1=+prompt('enter a number');
+// if(isNaN(num1)){
+// console.log('enter only number');
+
+// }else{
+//    if(num1===0){
+// console.log('this number is zero');
+
+//  }else if(num1>0){
+// console.log('positive number');
+
+//  }else{
+//   console.log('negative number');
+
+//  }
+// }
+
+//////////  Ques # 4
+// let char = prompt("Enter a single character:").toLowerCase();
+
+// if (char.length !== 1) {
+//   console.log("Please enter exactly one character.");
+// } else if (
+//   char === "a" ||
+//   char === "e" ||
+//   char === "i" ||
+//   char === "o" ||
+//   char === "u"
+// ) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+//////////  Ques # 5
+
+// let  password = 'abc123'; 
+// let userPassword = prompt('Enter your password');
+
+
+// if (!userPassword || !userPassword.trim()) {
+//   console.log('Please enter your password'); 
+// } else if (userPassword !== password) {
+//   console.log('Incorrect credentials');
+// } else {
+//   console.log('Correct! The password you entered matches the original password.');
+// }
+
+//////////  Ques # 6
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+
+//////////  Ques # 7
+// let time= +prompt('Enter time in 24 hrs format')
+// if(time>=0 && time <=24){
+//  if( time<12){
+// console.log('good morning');
+
+// }else if(time>=12 && time <17){
+// console.log('good afternoon');
+
+// }else if(time>=17 && time <21){
+// console.log('good evening');
+
+// }else if(time>=21 && time <24){
+// console.log('good night');
+
+// }
+// }else{
+//   console.log('enter valid number');
   
 // }
 
 
+////////////////////// ------Chap 14-16 "ARRAYS"-------
 
-////////////////////// ------Chap 12-13 "IF…ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS"-------
+////////////////////// ------Chap 17-20 "ARRAYS AND LOOP"-------
