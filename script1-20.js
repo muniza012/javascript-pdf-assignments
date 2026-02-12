@@ -630,12 +630,11 @@ document.writeln(`<h4>Result:</h4>
 
 //////////  Ques # 5
 
-// let  password = 'abc123'; 
+// let  password = 'abc123';
 // let userPassword = prompt('Enter your password');
 
-
 // if (!userPassword || !userPassword.trim()) {
-//   console.log('Please enter your password'); 
+//   console.log('Please enter your password');
 // } else if (userPassword !== password) {
 //   console.log('Incorrect credentials');
 // } else {
@@ -670,10 +669,140 @@ document.writeln(`<h4>Result:</h4>
 // }
 // }else{
 //   console.log('enter valid number');
-  
-// }
 
+// }
 
 ////////////////////// ------Chap 14-16 "ARRAYS"-------
 
+//////////  Ques # 1
+let studentNames = [];
+
+//////////  Ques # 2
+let colors = ["Red", "Blue", "Green"];
+
+//////////  Ques # 3
+let cnumbers = [1, 2, 3, 4];
+
+//////////  Ques # 4
+let answers = [true, false, true, false];
+
+//////////  Ques # 5
+let arr = [true, 1, "apple", [1, 2, 3]];
+
+//////////  Ques # 6
+let qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "MPHIL", "PhD"];
+
+for (let i = 0; i < qualifications.length; i++) {
+  document.writeln(`<p>${qualifications[i]}</p>`);
+}
+//////////  Ques # 7
+let stu = ["ali", "sara", "sana"];
+let score = [320, 230, 480];
+let total_Marks = 500;
+
+for (let i = 0; i < stu.length; i++) {
+  document.writeln(
+    `<p>Score of ${stu[i]} is ${score[i]}. Percentage:${(score[i] / total_Marks) * 100}% </p>`,
+  );
+}
+//////////  Ques # 8
+
+// let color = [];
+
+// let begin = prompt('Write colors to add at beginning, separated by commas').split(',');
+// let last = prompt('Write colors to add at last, separated by commas').split(',');
+
+// color.unshift(...begin);
+// color.push(...last);
+// console.log("After adding:", color);
+
+// color.shift();
+// console.log("After removing first:", color);
+
+// color.pop();
+// console.log("After removing last:", color);
+
+// let addNew = prompt('Add new color');
+// let user = +prompt('Write index number where you want to add the color');
+
+// if (isNaN(user)) {
+//     console.log("Write only number");
+// } else if (user < 0 || user > color.length) {
+//     console.log("Index out of range");
+// } else {
+//     color.splice(user, 0, addNew);
+//     console.log("After adding at index:", color);
+// }
+
+//////////  Ques # 9
+let scores = [320, 230, 480, 120];
+scores.sort(function (a, b) {
+  return a - b;
+});
+console.log("Sorted scores in ascending order:", scores);
+
+//////////  Ques # 10
+let cities = ["karachi", "lahore", "islamabad", "quetta", "peshawar"];
+let selectedCities = cities.slice(0, 3);
+console.log(selectedCities);
+
+//////////  Ques # 11
+
+var array = ["This", "is", "my", "cat"];
+let string = array.join(" ");
+console.log(array, string);
+
+//////////  Ques # 12
+
+// let devices= [];
+// devices.push("keyboard");
+// devices.push("mouse");
+// devices.push("monitor");
+// devices.push("printer");
+
+// console.log("devicess:", devices);
+
+// while(devices.length > 0) {
+//     let removedItem = devices.shift();
+//     console.log("Removed:", removedItem);
+// }
+
+//////////  Ques # 13
+
+let devices = [];
+devices.push("keyboard");
+devices.push("mouse");
+devices.push("monitor");
+devices.push("printer");
+
+console.log("devicess:", devices);
+while (devices.length > 0) {
+  let removedItem = devices.pop();
+  console.log("Removed:", removedItem);
+}
+
+//////////  Ques # 14
+
+let phones = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+document.writeln('<select name="phones">');
+for (let i = 0; i < phones.length; i++) {
+  document.writeln(`
+    <option value="">${phones[i]}</option>
+  `);
+}
+document.write('</select>');
+
+
 ////////////////////// ------Chap 17-20 "ARRAYS AND LOOP"-------
+
+//////////  Ques # 1
+//////////  Ques # 2
+//////////  Ques # 3
+//////////  Ques # 4
+//////////  Ques # 5
+//////////  Ques # 6
+//////////  Ques # 7
+//////////  Ques # 8
+//////////  Ques # 9
+//////////  Ques # 10
+
