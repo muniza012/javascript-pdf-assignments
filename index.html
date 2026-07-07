@@ -6,10 +6,155 @@
     <title>Javascript pdf Assignmentd</title>
   </head>
   <body>
-<input type="text" id="input">
-<button id="btn">enter</button>
+    <!-- <input type="text" id="input">
+<button id="btn">enter</button> -->
+
+    <a href="vgfgfgh" id="link">google</a>
+    <div style="display: flex; width: 200px; height: 300px">
+      <img
+        class="img"
+        src="https://png.pngtree.com/png-vector/20250610/ourmid/pngtree-modern-smartphone-with-large-screen---mobile-phone-clipart-png-image_16515022.png"
+        alt=""
+      />
+      <img
+        class="img"
+        src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-a175flbopkd/gallery/pk-galaxy-a17-sm-a175-sm-a175flbopkd-thumb-549001506"
+        alt=""
+      />
+      <img
+        class="img"
+        src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s921blgcpkd/gallery/pk-galaxy-s24-488994-sm-s921blgcpkd-thumb-544366961"
+        alt=""
+      />
+    </div>
+
+    <!-- <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table> -->
+
+    <img
+      id="change-img"
+      style="width: 300px; height: 300px"
+      src="https://media.istockphoto.com/id/2196545732/photo/cosmos-blooming-in-a-park.jpg?s=612x612&w=0&k=20&c=f4j4ARFK17AWviTM0ubzdQdO3EsYwD1IqZ0mt-cy_rw="
+      alt=""
+    />
+
+    <div
+      class="counter"
+      style="
+        background-color: black;
+        color: azure;
+        width: 100px;
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <button class="btn-1">+</button>
+      <p style="padding: 0px 5px" class="display"></p>
+      <button class="btn-2">-</button>
+    </div>
+
+    <!-- <form
+      id="form"
+      style="
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(126, 124, 124);
+        color: azure;
+        width: 300px;
+        display: flex;
+        height: 200px;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+      "
+    >
+      <div style="display: flex">
+        <label>Name</label>
+        <input id="name" type="text" />
+      </div>
+      <div style="display: flex">
+        <label>Father Name</label>
+        <input id="f-name" type="text" />
+      </div>
+      <div style="display: flex">
+        <label>DOB</label>
+        <input id="dob" type="date" />
+      </div>
+      <div style="display: flex">
+        <label for="">About You</label>
+        <textarea id="about"></textarea>
+      </div>
+      <button
+        style="
+          background-color: rgb(23, 146, 228);
+          color: azure;
+          border: none;
+          padding: 5px;
+        "
+        type="submit"
+        id="submit-btn"
+      >
+        Submit
+      </button>
+    </form>
+    <p id="output"></p>
+
+    <div class="read"></div> -->
+
+    <table id="studentTable" border="1" style="display:none">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Father Name</th>
+          <th>DOB</th>
+          <th>About</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <br />
+
+    <form id="studentForm">
+      <input id="name" type="text" placeholder="Name" required />
+      <input id="f-name" type="text" placeholder="Father Name" required />
+      <input id="dob" type="date" required />
+      <textarea id="about" placeholder="About"></textarea>
+
+      <button type="submit">Add Student</button>
+    </form>
+
+    <br />
+
+    <form id="editForm" style="display: none">
+      <h3>Edit Student</h3>
+
+      <input id="edit-name" type="text" />
+      <input id="edit-fname" type="text" />
+      <input id="edit-dob" type="date" />
+      <textarea id="edit-about"></textarea>
+
+      <button type="submit">Update</button>
+    </form>
 
     <!-- <script src="script1-20.js"></script> -->
-    <script src="script21-42.js"></script>
+    <!-- <script src="script21-42.js"></script> -->
+    <script src="script43-52.js"></script>
   </body>
 </html>
